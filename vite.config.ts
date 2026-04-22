@@ -1,12 +1,12 @@
 import { defineConfig } from "vite";
-import { TanStackStartVite } from "@tanstack/react-start/plugin";
+import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 import viteReact from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import tsConfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   plugins: [
-    TanStackStartVite(), // This defaults to a standard Node/Bun server build!
+    tanstackStart(), 
     viteReact(),
     tailwindcss(),
     tsConfigPaths(),
