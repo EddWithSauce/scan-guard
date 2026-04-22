@@ -11,4 +11,7 @@ export default defineConfig({
     tailwindcss(),
     tsConfigPaths(),
   ],
+  preview: {
+    allowedHosts: ["scan-guard.onrender.com"],
+  },
 });
